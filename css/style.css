@@ -1,0 +1,161 @@
+:root {
+    --top1: 20px;
+    --left1: 50px;
+    --top2: 20px;
+    --left2: 50px;
+    --top3: 20px;
+    --left3: 50px;
+}
+
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html{
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.container{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+
+}
+
+.sky{
+	width: 100%;
+	background: cyan;
+	height: 75vh;
+	cursor:url('../img/scope.png'), auto;
+}
+
+.ground{
+	position: relative;
+	width: 100%;
+	background: brown;
+	height: 25vh;
+	cursor:url('../img/scope.png'), auto;
+}
+
+.duck{
+	height: 50px;
+	width: 50px;
+	top: 50px;
+	left: 20px;
+	position: absolute;
+	background: url('../img/duck.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	animation: fly linear infinite 5s;
+	cursor:url('../img/scope.png'), auto;
+}
+
+.sun{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 25px;
+	background: yellow;
+	left: 1050px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 35px orange;
+	cursor:url('../img/scope.png'), auto;
+}
+
+.bullets{
+	position: absolute;
+	top: 500px;
+	left: 80%;
+	display: inline-block;
+}
+
+.bullets .bullet{
+	display: inline-block;
+	height: 40px;
+	width: 20px;
+	background: url('../img/bullet.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	cursor:url('../img/scope.png'), auto;
+}
+
+.custom-shape-divider-top-1658756484 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1658756484 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 164px;
+}
+
+.custom-shape-divider-top-1658756484 .shape-fill {
+    fill: #00FFFF;
+}
+
+@keyframes fly{
+0%{
+	top: 20px;
+	left: 50px;
+}
+
+25%{
+	top: var(--top1);
+	left: var(--left1);
+}
+
+50%{
+	top: var(--top2);
+	left: var(--left2);
+}
+
+75%{
+	top: var(--top3);
+	left: var(--left3);
+}
+
+100%{
+	top: 20px;
+	left: 50px;
+}
+}
+
+
+.modal{
+	top: 200px;
+	left: 0;
+	position: absolute;
+	width: 30%;
+	margin-left: 35%;
+	background: black;
+	text-align: center;
+	border-radius: 15px;
+	border: 2px solid white;
+	padding: 30px;
+}
+
+.modal h1{
+	color: white;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+
+.modal button{
+	background: white;
+	color: black;
+	font-size: 20px;
+}
+
+.win, .lose{
+	display: none;
+}
