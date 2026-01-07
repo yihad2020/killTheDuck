@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kill the duck</title>
+</head>
+<body>
+
+<div class="container">
+	<div class="sky"></div>
+	<div class="ground">
+<div class="custom-shape-divider-top-1658756484">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+	</div>
+	<div class="duck"></div>
+	<div class="sun"></div>
+	<div class="bullets">
+		<div class="bullet" id="b1"> </div>
+		<div class="bullet" id="b2"> </div>
+		<div class="bullet" id="b3"> </div>
+		<div class="bullet" id="b4"> </div>
+		<div class="bullet" id="b5"> </div>
+		<div class="bullet" id="b6"> </div>
+	</div>
+
+<div class="modal win">
+	<h1> ¡Has Ganado!</h1>
+	<button onclick="location.reload();"> Volver a Jugar</button>
+</div>
+
+<div class="modal lose">
+		<h1> ¡Has Perdido!</h1>
+	<button onclick="location.reload();"> Intentar de Nuevo</button>
+</div>
+</div>
+
+
+<audio  id="duck_mp3" src="sounds/duck.mp3" type="audio/mpeg"> </audio>
+<audio  id="gunshot_mp3" src="sounds/gunshot2.mp3" type="audio/mpeg"> </audio>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+ crossorigin="anonymous"></script>
+<script src="js/function.js"></script>
+</body>
+</html>
